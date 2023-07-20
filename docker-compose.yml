@@ -1,0 +1,8 @@
+services:
+  myserver:
+    image: php:7.4.30-apache
+    ports:
+      - 80:80
+    volumes:
+      - /home/gabriel/mypage:/var/www/html
+    restart: always
